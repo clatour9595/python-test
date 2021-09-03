@@ -3,6 +3,7 @@
 def capital_case(v):
     return v.capitalize()
 
-r=capital_case('christina')
-print(r)
+def test_capital ():
+    resultat = capital_case ("christina")
+    assert resultat == 'Christina'
 
