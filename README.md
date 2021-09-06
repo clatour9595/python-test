@@ -35,6 +35,7 @@ C'est un simple projet pour apprendre Jenkins et découcrir les tests unitaires
 
     # installation des dépendances du projet depuis le fichier requirements.txt
     pip install -r .\requirements.txt
+    ```
 
 
 
