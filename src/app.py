@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-def capital_case(v):
-    return v.capitalize()
+def maj_letter(mot):
+    return str.capitalize(mot[0])
 
-def test_capital ():
-    resultat = capital_case ("christina")
-    assert resultat == 'Christina'
 
+def test_maj_letter():
+    test = maj_letter("adrien")
+    assert test == "A"
