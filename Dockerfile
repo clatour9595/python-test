@@ -1,14 +1,15 @@
-
+  
 FROM python:3.9
 
+# installation des dépendances
+WORKDIR /app
 
-WORKDIR /application
-
-COPY ./requirements.txt .
-COPY ./src .
-
-
+COPY ./requirements.txt ./
 RUN pip install -r requirements.txt
 
+COPY ./src /app
 
-CMD [ "python3", "app.py" ]
+EXPOSE 8080
+
+ENTRYPOINT [ "python3" ]
+CMD [ "app.py" ]
